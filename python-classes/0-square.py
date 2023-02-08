@@ -7,4 +7,4 @@ class Square:
 
     """empty square"""
 
-pass
+    pass
