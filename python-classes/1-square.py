@@ -3,7 +3,7 @@
 
 
 class Square:
-    """ Definition"""
+    """Class"""
 
     def __init__(self, size):
         """private instance attribute"""
