@@ -1,28 +1,34 @@
 #!/usr/bin/python3
-"""empty class Square that defines a square"""
-
-
-def __init__(self, size=0):
-    self.size = size
+""" Class Square that defines a square """
 
 
 class Square:
-    """private atribute of an estance"""
+    """ class initialization """
+    def __init__(self, size=0):
+        """ Definition with private instance attribute size
+        which is assigned with the double underscore before given name"""
+
+        self.__size = size
+        if type(size) is not int:
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")
 
     @property
     def size(self):
+        """ size definition to retrieve (getter)
+        A method used for getting a value is decorated with @property"""
         return self.__size
 
     @size.setter
     def size(self, value):
-
-        if not isinstance(value, int):
+        """ size definition to setter the data, now size will be equal to value
+        A method that function as the setter is decorated with """
+        self.__size = value
+        if type(value) is not int:
             raise TypeError("size must be an integer")
-        elif (value < 0):
+        if value < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
 
     def area(self):
         return self.__size * self.__size
-
