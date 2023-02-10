@@ -2,6 +2,10 @@
 """empty class Square that defines a square"""
 
 
+def __init__(self, size=0):
+    self.size = size
+
+
 class Square:
     """private atribute of an estance"""
 
@@ -11,7 +15,6 @@ class Square:
 
     @size.setter
     def size(self, value):
-    
 
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -22,3 +25,4 @@ class Square:
 
     def area(self):
         return self.__size * self.__size
+
