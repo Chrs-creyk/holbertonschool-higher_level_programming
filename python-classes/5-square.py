@@ -1,35 +1,46 @@
 #!/usr/bin/python3
-"""This module have a class that defines a square """
+""" Class Square that defines a square """
 
 
 class Square:
-    """Definition of square attribute"""
-
+    """ class initialization """
     def __init__(self, size=0):
-        self.size = size
+        """ Definition with private instance attribute size
+        which is assigned with the double underscore before given name """
+
+        self.__size = size
+        if type(size) is not int:
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")
 
     @property
     def size(self):
-        """Definition of square size"""
+        """ size definition to retrieve (getter)
+        A method used for getting a value is decorated with @property """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """Re-definition of square size attribute to private"""
-        if not isinstance(value, int):
+        """ size definition to setter the data, now size will be equal to value
+        A method that function as the setter is decorated with @ .setter """
+        self.__size = value
+        if type(value) is not int:
             raise TypeError("size must be an integer")
-        elif (value < 0):
+        if value < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
 
     def area(self):
-        """Calcs  and return the area of square"""
-        return self.size ** 2
+        return self.__size * self.__size
 
     def my_print(self):
-        """Prints a square with # symbol"""
-        if self.size == 0:
-            print('')
+        """ Public instance method that prints in stdout
+        the square with the character #
+        """
         for i in range(self.size):
-            print('#' * self.size)
+            for s in range(self.size):
+                print("#", end="")
+            print("")
+
+        if self.size is 0:
+            print("")
