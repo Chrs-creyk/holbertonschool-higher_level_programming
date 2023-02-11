@@ -1,0 +1,1 @@
+this project teach about good python exceptions
