@@ -13,7 +13,6 @@ class Rectangle:
     Defines a rectangle with initialized values or 0 by default and calculates
     area and perimeter
     """
-
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
