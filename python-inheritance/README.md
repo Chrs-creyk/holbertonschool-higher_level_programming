@@ -1,1 +1,5 @@
-here 
+Inheritance is a concept in object-oriented programming (OOP) that allows you to create a new class that is a modified version of an existing class. The new class is called the subclass (or derived class), and the existing class is the superclass (or base class). The subclass inherits all the attributes and methods of the superclass, and can also add new attributes and methods or override existing ones.
+
+Inheritance allows you to reuse code from an existing class and extend its functionality, making your code more modular and maintainable. It also allows you to create a hierarchy of classes, where each subclass is a more specialized version of its superclass.
+
+For example, you could have a Vehicle class that represents a general vehicle, and then create subclasses such as Car, Truck, and Motorcycle that inherit from the Vehicle class and add or modify attributes and methods specific to each type of vehicle.
