@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""print number lines"""
+"""write empty or only lines"""
 
 
 def number_of_lines(filename=""):
