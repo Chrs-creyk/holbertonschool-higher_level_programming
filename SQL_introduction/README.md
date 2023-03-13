@@ -1,0 +1,1 @@
+this directory contains different examples of sql introducction
