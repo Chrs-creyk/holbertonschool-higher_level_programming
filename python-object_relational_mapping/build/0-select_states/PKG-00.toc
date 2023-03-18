@@ -1,0 +1,44 @@
+('/mnt/c/Users/Creyk/repo '
+ '1/holbertonschool-higher_level_programming/python-object_relational_mapping/build/0-select_states/0-select_states.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True},
+ [('PYZ-00.pyz',
+   '/mnt/c/Users/Creyk/repo '
+   '1/holbertonschool-higher_level_programming/python-object_relational_mapping/build/0-select_states/PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   '/mnt/c/Users/Creyk/repo '
+   '1/holbertonschool-higher_level_programming/python-object_relational_mapping/build/0-select_states/localpycs/struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   '/mnt/c/Users/Creyk/repo '
+   '1/holbertonschool-higher_level_programming/python-object_relational_mapping/build/0-select_states/localpycs/pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   '/mnt/c/Users/Creyk/repo '
+   '1/holbertonschool-higher_level_programming/python-object_relational_mapping/build/0-select_states/localpycs/pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   '/mnt/c/Users/Creyk/repo '
+   '1/holbertonschool-higher_level_programming/python-object_relational_mapping/build/0-select_states/localpycs/pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   '/home/chrs/.local/lib/python3.8/site-packages/PyInstaller/loader/pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('0-select_states',
+   '/mnt/c/Users/Creyk/repo '
+   '1/holbertonschool-higher_level_programming/python-object_relational_mapping/0-select_states.py',
+   'PYSOURCE')],
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
