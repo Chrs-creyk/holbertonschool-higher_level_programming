@@ -1,22 +1,23 @@
 #!/usr/bin/python3
-""" script that list states
-"""
-
-
+"""Module 0-select_states"""
 import MySQLdb
-from sys import argv
+import sys
+
 
 if __name__ == "__main__":
+    """Main function"""
+    username = sys.argv[1]
+    password = sys.argv[2]
+    database = sys.argv[3]
 
-    userr = argv[1]
-    passw = argv[2]
-    namd = argv[3]
-    lc = "localhost"
-
-    db = MySQLdb.connect(host=lc, port=3306, user=userr, passwd=passw, db=namd)
+    db = MySQLdb.connect(
+        host="localhost",
+        port=3306,
+        user=username,
+        passwd=password,
+        db=database
+        )
     cur = db.cursor()
-    exe = cur.execute("SELECT * FROM states ORDER BY id;")
-    for x in cur.fetchall():
-        print(x)
-    db.close()
-    cur.close()
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    for row in cur:
+        print(row)
