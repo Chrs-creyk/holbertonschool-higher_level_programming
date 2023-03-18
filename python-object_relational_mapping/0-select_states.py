@@ -19,4 +19,4 @@ if __name__ == '__main__':
     for row in q_rows:
         print(row)
     cursor.close()
-    connection.clos()
+    connection.close()
