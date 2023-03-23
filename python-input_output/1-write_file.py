@@ -1,8 +1,13 @@
 #!/usr/bin/python3
-"""write empty or only lines"""
+"""
+Module write_file
+"""
 
-
-def number_of_lines(filename=""):
-    """function"""
-    with open(filename, encoding="utf-8") as file:
-        return len(file.readlines())
+def write_file(filename="", text=""):
+    """
+    function that writes a string to a text file (UTF8) and returns the number
+    of characters written
+    """
+    with open(filename, mode='w', encoding='utf-8') as f:
+        written = f.write(text)
+    return written
