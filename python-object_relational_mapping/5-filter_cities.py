@@ -28,3 +28,4 @@ if __name__ == '__main__':
     print(', '.join(li))
     cursor.close()
     connection.close()
+    
