@@ -1,0 +1,1 @@
+This readme contains scripts from java script
