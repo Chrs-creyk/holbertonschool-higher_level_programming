@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// script that reads and prints the content of a file
+// script that reads and prints the content of a file 0.1
 const fs = require('fs');
 const f = process.argv[2];
 fs.readFile(f, 'utf-8', function (err, data) {
